@@ -1,3 +1,10 @@
 body {
   background-color: firebrick;
 }
+.card-img-top {
+  max-height: 250px;
+}
+
+.card {
+  margin: 1em 0;
+}
