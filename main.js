@@ -61,9 +61,19 @@ const cardBuilder = (pieArr) => {
   }
   domString += '</div>';
 
-
   // print them to the dom
   printToDom("pie-zone", domString);
 }
+
+const buttonClickEvent = (e) => {
+  const instructorName = e.target.id;
+  console.log(instructorName);
+  // should filter the pies based on the button that you clicked
+}
+
+document.getElementById('zoe').addEventListener('click', buttonClickEvent);
+document.getElementById('callan').addEventListener('click', buttonClickEvent);
+document.getElementById('michael').addEventListener('click', buttonClickEvent);
+
 
 cardBuilder(pies);
